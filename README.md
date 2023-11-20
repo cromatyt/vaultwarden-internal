@@ -1,5 +1,7 @@
 # Homelab vaulwarden testing
 
+In this example, my portainer's IP is 192.168.64.10 and in the docker-compose file I set TZ, so don't forget to replace it with yours
+
 ## Docker
 
 Install docker + portainer
@@ -25,7 +27,7 @@ mkcert -install
 mkcert *.home.arpa
 ```
 
-1. Add CA cert to your browser
+3. Add CA cert to your browser
 
 Example for firefox: 
 
@@ -313,4 +315,8 @@ Add `VAULT_TOKEN` as environment variable
 
 #### Test
 
-Open vault.home.arpa in your browser
+Open your browser and test the URL:
+- portainer.home.arpa
+- vault.home.arpa
+- email.home.arpa
+- pgadmin.home.arpa
